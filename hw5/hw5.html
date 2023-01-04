@@ -168,7 +168,7 @@ function animate() {
 			if(sound === "yes"){
 				hitWall.play()
 			}
-				circle.material.color.set(0x587969)
+				circle.material.color.set(0x583452)
 	}
 	 $.get("http://127.0.0.1:1337/api?cx="+ circle.position.x +"&cy="+ circle.position.y + "&r=" + r +"&minx=" + (box.position.x - 10) + "&miny=" + (box.position.y - 5) + "&maxx=" + (box.position.x + 10) + "&maxy=" + (box.position.y + 5), function( data ) {
 			
@@ -177,7 +177,7 @@ function animate() {
 			result = parseInt(data.output, 10);
 			if(result === 0){
 				$('#collision').text("not collision");
-				circle.material.color.set(0x587969)
+				circle.material.color.set(0x583452)
 			}
 			if(result === 1){
 				$('#collision').text("Collision !!!");
